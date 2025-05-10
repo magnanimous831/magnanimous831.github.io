@@ -28,8 +28,8 @@ BlackBook is a comprehensive student management system built with C#, .NET Frame
 Feel free to reach out if you have any questions or would like to discuss potential opportunities:
 
 - Email: tanukipkirui765@gmail.com
-- LinkedIn: [https://linkedin.com/in/shadrak-kipkirui-608961246] 
-- GitHub: [https://github.com/magnanimous831]
+- LinkedIn: https://linkedin.com/in/shadrak-kipkirui-608961246 
+- GitHub: https://github.com/magnanimous831 
 
 ## License
 
