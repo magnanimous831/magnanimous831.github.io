@@ -119,4 +119,38 @@ window.addEventListener('scroll', () => {
             item.classList.add('active');
         }
     });
+});
+
+// Project image loading
+document.addEventListener('DOMContentLoaded', () => {
+    const projectImages = document.querySelectorAll('.project-image img');
+    
+    projectImages.forEach(img => {
+        img.addEventListener('load', () => {
+            img.classList.add('loaded');
+        });
+        
+        // Add loading animation
+        img.style.opacity = '0';
+        img.style.transition = 'opacity 0.3s ease';
+        
+        // If image is already cached
+        if (img.complete) {
+            img.classList.add('loaded');
+            img.style.opacity = '1';
+        }
+    });
+});
+
+// Project card hover effect
+const projectCards = document.querySelectorAll('.project-card');
+
+projectCards.forEach(card => {
+    card.addEventListener('mouseenter', () => {
+        card.style.transform = 'translateY(-10px)';
+    });
+    
+    card.addEventListener('mouseleave', () => {
+        card.style.transform = 'translateY(0)';
+    });
 }); 
